@@ -1,0 +1,20 @@
+doctrine_mongodb:
+    default_connection: default
+    connections:
+        default:
+            server: '%env(resolve:MONGODB_URL)%'
+            #options: {}
+            options:
+                username: pascal
+                password: premiertest
+                authSource: MONLOGIS
+    document_managers:
+        default:
+            auto_mapping: true 
+            #mappings:
+            #    App: 
+            #        is_bundle: false
+            #        type: attribute
+            #        dir: '%kernel.project_dir%/src/Document'
+            #        prefix: 'App\Document'
+            #        alias: App
